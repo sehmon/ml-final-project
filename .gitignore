@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+MillionSongSubset
+bin/
+*.csv
+numpy*
+scipy*/
+scikit*/
+sklearn/
+*.tar.gz
