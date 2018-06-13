@@ -189,18 +189,22 @@
         <div class="container">
           <h2 class="text-center text-uppercase text-white">Future Work</h2>
           <hr class="star-light mb-5">
-          
-          <div class="col-lg-12 col-lg-offset-3" style="margin: 40px 0;">
-              <p>
-                  We first approached this problem by loading our data into a pandas dataframe, and doing a few plots to see where how our data was distributed across features. Upon doing this, we can narrow down our set of attributes to ones that seem to give us a good picture of where each example lies. The columns we decided to use were: 'artist.hotttnesss', 'bars_start', 'beats_start', 'duration', 'familiarity', 'key', 'loudness', 'mode','song.hotttnesss', 'tatums_start', 'tempo', 'time_signature', 'year'. This, along with dropping any data that was equal to NaN gave us a dataset that had 13 columns and ~8,000 rows.  
-              </p>
-            </div>
-            <div class="col-lg-12 col-lg-offset-3" style="margin: 40px 0;">
-                <p>
-                    For this project, we used the scikit python library to handle our classifier training. We first started with a DecisionTreeRegressor, because our output label was a continuous variable. After splitting our data into training and testing sets, we were able to calculate a (pretty terrible) score for our classifier and found a mean absolute error of 0.18 after our first attempt.
-                </p>
-              </div>
-        </div>
+          <div class="row">
+
+              <div class="col-lg-12 col-lg-offset-3" style="margin: 40px 0;">
+                  <p>
+                      An obvious improvement that can be made with this analysis is using more data. The original MSD is approximately 280gbs, which is way to much to process on a single machine. Using a cloud computing instance with a tool such as Hadoop can allow you to build a better model based off more data.   
+                  </p>
+                </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-12 col-lg-offset-3" style="margin: 40px 0;">
+                  <p>
+                    Another improvement that can be made is clustering around music genre, to see if certain groupings appear across genres. The things that make a pop song popular might not make a hip hop song popular, so it'd be interesting to see how the feature distributions change across genres.
+                </div>
+          </div>
+    </div>
       </section>
 
     <div class="copyright py-4 text-center text-white">
